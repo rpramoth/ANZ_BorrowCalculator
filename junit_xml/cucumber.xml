@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="14.481315">
+<testcase classname="ANZ Bo" name="Calculate Estimates" time="13.5902">
+<failure message="org.junit.ComparisonFailure: expected:&lt;$[479],000&gt; but was:&lt;$[507],000&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at stepDefn.BorrowCalcDefn.borrowing_estimates_are_calculated(BorrowCalcDefn.java:65)&#13;&#10;&#9;at ✽.Then borrowing estimates are calculated(/Users/Pramod/Desktop/New folder/com.Collabera/src/main/java/Feature/BorrowCalc.feature:7)&#13;&#10;"><![CDATA[Given user is on borrowing Page.............................................passed
+When the user enters the details............................................passed
+Then borrowing estimates are calculated.....................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<$[479],000> but was:<$[507],000>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefn.BorrowCalcDefn.borrowing_estimates_are_calculated(BorrowCalcDefn.java:65)
+	at ✽.Then borrowing estimates are calculated(/Users/Pramod/Desktop/New folder/com.Collabera/src/main/java/Feature/BorrowCalc.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="ANZ Bo" name="Test Start Over button" time="0.495185">
+<system-out><![CDATA[When the user hits the startover button.....................................passed
+Then values should be cleared from text boxes...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="ANZ Bo" name="Living Expenses is minimum" time="0.39593">
+<system-out><![CDATA[When living expenses value is one...........................................passed
+Then validation message should be captured..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

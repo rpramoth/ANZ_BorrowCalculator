@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Calculate Estimates",
+        "description": "",
+        "id": "anz-bo;calculate-estimates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10434650637,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on borrowing Page",
+            "match": {
+              "location": "BorrowCalcDefn.user_is_on_borrowing_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2103989029,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters the details",
+            "match": {
+              "location": "BorrowCalcDefn.the_user_enters_the_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Single",
+                  "0",
+                  "Home to live in",
+                  "80000",
+                  "10000",
+                  "500",
+                  "0",
+                  "100",
+                  "0",
+                  "10000"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1051560464,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c$[479],000\u003e but was:\u003c$[507],000\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefn.BorrowCalcDefn.borrowing_estimates_are_calculated(BorrowCalcDefn.java:65)\r\n\tat ✽.Then borrowing estimates are calculated(/Users/Pramod/Desktop/New folder/com.Collabera/src/main/java/Feature/BorrowCalc.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "borrowing estimates are calculated",
+            "match": {
+              "location": "BorrowCalcDefn.borrowing_estimates_are_calculated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Test Start Over button",
+        "description": "",
+        "id": "anz-bo;test-start-over-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 212705570,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user hits the startover button",
+            "match": {
+              "location": "BorrowCalcDefn.the_user_hits_the_startover_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 282479893,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "values should be cleared from text boxes",
+            "match": {
+              "location": "BorrowCalcDefn.values_should_be_cleared_from_text_boxes()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Living Expenses is minimum",
+        "description": "",
+        "id": "anz-bo;living-expenses-is-minimum",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 342540900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "living expenses value is one",
+            "match": {
+              "location": "BorrowCalcDefn.living_expenses_value_is_one()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53388607,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validation message should be captured",
+            "match": {
+              "location": "BorrowCalcDefn.validation_message_should_be_captured()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ANZ Bo",
+    "description": "",
+    "id": "anz-bo",
+    "keyword": "Feature",
+    "uri": "/Users/Pramod/Desktop/New folder/com.Collabera/src/main/java/Feature/BorrowCalc.feature"
+  }
+]
